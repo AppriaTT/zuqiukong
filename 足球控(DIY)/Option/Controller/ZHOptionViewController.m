@@ -42,6 +42,7 @@
         //可能要自己写..
         [weakSelf.navigationController pushViewController:detailSettingVC animated:YES];
     }];
+    // 此方法在iOS8.3后过时
     UIActionSheet *sheet = [[UIActionSheet alloc]initWithTitle:@"选择你想要取照的方式" delegate:self cancelButtonTitle:@"取消" destructiveButtonTitle:nil otherButtonTitles:@"拍照", nil];
     [sheet addButtonWithTitle:@"相册"];
 //    [sheet ]
