@@ -20,6 +20,7 @@
     ZHStatusCell *cell = [tableView dequeueReusableCellWithIdentifier:@"StatusCell"];
     if (!cell) {
         cell = [[self alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"StatusCell"];
+        //初始化内部子控件
         cell.detailView = [[ZHStatusDetailView alloc]init];
         cell.tCom = [ZHStatusToolBar toolBarComment];
         cell.tShow = [ZHStatusToolBar toolBarShowMsg];
