@@ -2,7 +2,7 @@
 //  ZHPlayerCell.m
 //  足球控(DIY)
 //
-//  Created by qianfeng on 16/1/16.
+//  Created by Aaron on 16/1/16.
 //  Copyright (c) 2016年 叶无道. All rights reserved.
 //
 

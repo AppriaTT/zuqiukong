@@ -2,7 +2,7 @@
 //  ZHSeasonFooter.m
 //  足球控(DIY)
 //
-//  Created by qianfeng on 16/1/15.
+//  Created by Aaron on 16/1/15.
 //  Copyright (c) 2016年 叶无道. All rights reserved.
 //
 

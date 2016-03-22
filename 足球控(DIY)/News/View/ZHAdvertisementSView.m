@@ -2,7 +2,7 @@
 //  ZHAdvertisementSView.m
 //  02-广告视图
 //
-//  Created by qianfeng on 15/12/15.
+//  Created by Aaron on 15/12/15.
 //  Copyright (c) 2015年 肖喆. All rights reserved.
 //
 
