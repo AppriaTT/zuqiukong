@@ -9,6 +9,7 @@
 #import "ZHOptionCell.h"
 #import "TotalAPI.h"
 #import "UIButton+WebCache.h"
+#import "ZHCircleImageView.h"
 @interface ZHOptionCell()
 @property (weak, nonatomic) IBOutlet UIButton *btn1;
 @property (weak, nonatomic) IBOutlet UIButton *btn2;

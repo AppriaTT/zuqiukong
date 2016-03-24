@@ -29,7 +29,7 @@
     _person = person;
     [self.playerView sd_setImageWithURL:[NSURL URLWithString:ZHScoutPersonSmallIcon(person.person_id)] placeholderImage:[UIImage imageNamed:@"profile"]];
     self.playerView.layer.cornerRadius = 17.5;
-    self.playerView.layer.masksToBounds = YES;
+//    self.playerView.layer.masksToBounds = YES;
     self.playerNameL.text = person.name;
     self.club_nameL.text = person.club_name;
     self.fromTeamL.text = person.from_club_name ;

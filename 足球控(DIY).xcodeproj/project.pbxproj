@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		98EF867F1CA135BE00BD4CB6 /* ZHCircleImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 98EF867E1CA135BE00BD4CB6 /* ZHCircleImageView.m */; };
 		BC0FB69A1C4BC95200C6F70B /* teamTheme in Resources */ = {isa = PBXBuildFile; fileRef = BC0FB6991C4BC95200C6F70B /* teamTheme */; };
 		BC0FB69D1C4BCC1700C6F70B /* ZHSkinTool.m in Sources */ = {isa = PBXBuildFile; fileRef = BC0FB69C1C4BCC1700C6F70B /* ZHSkinTool.m */; };
 		BC0FB69F1C4BDB3000C6F70B /* Theme.plist in Resources */ = {isa = PBXBuildFile; fileRef = BC0FB69E1C4BDB3000C6F70B /* Theme.plist */; };
@@ -248,6 +249,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		98EF867D1CA135BE00BD4CB6 /* ZHCircleImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZHCircleImageView.h; sourceTree = "<group>"; };
+		98EF867E1CA135BE00BD4CB6 /* ZHCircleImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZHCircleImageView.m; sourceTree = "<group>"; };
 		BC0FB6991C4BC95200C6F70B /* teamTheme */ = {isa = PBXFileReference; lastKnownFileType = folder; path = teamTheme; sourceTree = "<group>"; };
 		BC0FB69B1C4BCC1700C6F70B /* ZHSkinTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZHSkinTool.h; sourceTree = "<group>"; };
 		BC0FB69C1C4BCC1700C6F70B /* ZHSkinTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZHSkinTool.m; sourceTree = "<group>"; };
@@ -1372,6 +1375,8 @@
 		BCD8899E1C448429007212BA /* DIYUI */ = {
 			isa = PBXGroup;
 			children = (
+				98EF867D1CA135BE00BD4CB6 /* ZHCircleImageView.h */,
+				98EF867E1CA135BE00BD4CB6 /* ZHCircleImageView.m */,
 				BCD8899F1C448429007212BA /* ZHRefreshGifFooter.h */,
 				BCD889A01C448429007212BA /* ZHRefreshGifFooter.m */,
 				BCD889A11C448429007212BA /* ZHRefreshGifHeader.h */,
@@ -1904,6 +1909,7 @@
 				BCD888811C4482F4007212BA /* ZHScoutViewController.m in Sources */,
 				BCD88A561C44842A007212BA /* MJPropertyType.m in Sources */,
 				BCBF67691C4512A7002601D2 /* ZHMatchDetailViewController.m in Sources */,
+				98EF867F1CA135BE00BD4CB6 /* ZHCircleImageView.m in Sources */,
 				BCBF675D1C450E07002601D2 /* ZHTableController.m in Sources */,
 				BC8FB21E1C490EE7001C4FD9 /* MyPieElement.m in Sources */,
 				BC4797801C4A7372009BD0E3 /* UIButton+WebCache.m in Sources */,

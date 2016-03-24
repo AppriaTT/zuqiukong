@@ -39,7 +39,7 @@
 -(void)awakeFromNib
 {
     self.iconView.layer.cornerRadius = self.iconView.frame.size.width / 2;
-    self.iconView.layer.masksToBounds = YES;
+//    self.iconView.layer.masksToBounds = YES;
 }
 + (instancetype) cellWithTableView :(UITableView *)tableView
 {
