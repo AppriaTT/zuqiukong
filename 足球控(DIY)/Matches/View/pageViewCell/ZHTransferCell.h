@@ -8,9 +8,10 @@
 
 #import <UIKit/UIKit.h>
 #import "ZHPerson.h"
+#import "ZHCircleImageView.h"
 @interface ZHTransferCell : UITableViewCell
 @property (weak, nonatomic) IBOutlet UILabel *playerNameL;
-@property (weak, nonatomic) IBOutlet UIImageView *playerView;
+@property (weak, nonatomic) IBOutlet ZHCircleImageView  *playerView;
 @property (weak, nonatomic) IBOutlet UILabel *club_nameL;
 @property (weak, nonatomic) IBOutlet UILabel *fromTeamL;
 @property (weak, nonatomic) IBOutlet UILabel *valueL;

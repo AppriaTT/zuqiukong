@@ -23,7 +23,7 @@
                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="profile" translatesAutoresizingMaskIntoConstraints="NO" id="hGj-4K-96r">
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="profile" translatesAutoresizingMaskIntoConstraints="NO" id="hGj-4K-96r" customClass="ZHCircleImageView">
                         <rect key="frame" x="79" y="16" width="50" height="50"/>
                     </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="温格" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bEW-KO-IxJ">
@@ -107,7 +107,7 @@
                 <outlet property="typeView" destination="huD-H3-vlQ" id="Y7p-Ea-emN"/>
                 <outlet property="yellowL" destination="ErJ-vf-7CC" id="EYV-gQ-LDa"/>
             </connections>
-            <point key="canvasLocation" x="189.5" y="58.5"/>
+            <point key="canvasLocation" x="189.5" y="53.5"/>
         </tableViewCell>
         <view contentMode="scaleToFill" id="lfH-rc-J20" userLabel="section Cell" customClass="ZHPlayerCell">
             <rect key="frame" x="0.0" y="0.0" width="375" height="30"/>

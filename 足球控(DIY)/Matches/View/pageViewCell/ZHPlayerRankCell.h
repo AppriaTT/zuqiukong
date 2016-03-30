@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "ZHCircleImageView.h"
 @class ZHPerson;
 @interface ZHPlayerRankCell : UITableViewCell
 @property (weak, nonatomic) IBOutlet UILabel *sectionHeaderFirL;
@@ -16,7 +17,7 @@
 /**
  *  球员头像
  */
-@property (weak, nonatomic) IBOutlet UIImageView *playerIconView;
+@property (weak, nonatomic) IBOutlet ZHCircleImageView *playerIconView;
 @property (weak, nonatomic) IBOutlet UIImageView *teamView;
 @property (weak, nonatomic) IBOutlet UILabel *nameL;
 @property (weak, nonatomic) IBOutlet UILabel *teamNameL;

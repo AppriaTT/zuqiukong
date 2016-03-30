@@ -9,6 +9,7 @@
 #import "ZHPlayerRankCell.h"
 #import "ZHPerson.h"
 #import "TotalAPI.h"
+
 @implementation ZHPlayerRankCell
 - (instancetype) initWithTableView :(UITableView *)tableView
 {
@@ -35,8 +36,8 @@
     
     NSString *teamUrl = [NSString stringWithFormat:@"%@.png",dataDict[@"team_id"]];
     [self.teamView sd_setImageWithURL:[NSURL URLWithString:ZHTeamsIconURL(teamUrl)] placeholderImage:[UIImage imageNamed:@"scout_login_input_ic_right"]];
-    self.playerIconView.layer.cornerRadius = 17.5;
-    self.playerIconView.layer.masksToBounds = YES;
+    self.playerIconView.cornerRadius = 17.5;
+//    self.playerIconView.layer.masksToBounds = YES;
     
     self.teamNameL.text = dataDict[@"team_name"];
     self.countL.text = dataDict[@"count"];

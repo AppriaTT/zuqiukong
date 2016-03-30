@@ -31,7 +31,14 @@
     
     [self.image drawInRect:bounds];
 }
-
+- (instancetype)initWithCoder:(NSCoder *)coder
+{
+    self = [super initWithCoder:coder];
+    if (self) {
+        self.backgroundColor = [UIColor clearColor];
+    }
+    return self;
+}
 //- (void)setImage:(UIImage *)image {
 //    
 //    _image = image;

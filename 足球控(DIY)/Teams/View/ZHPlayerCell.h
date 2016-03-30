@@ -7,10 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "ZHCircleImageView.h"
 @class ZHPerson;
 @interface ZHPlayerCell : UITableViewCell
 @property (nonatomic,strong)  ZHPerson *person;
-@property (weak, nonatomic) IBOutlet UIImageView *iconView;
+@property (weak, nonatomic) IBOutlet ZHCircleImageView *iconView;
 
 @property (nonatomic,copy)void(^optionBlock) ();
 

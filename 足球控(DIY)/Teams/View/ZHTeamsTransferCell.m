@@ -10,8 +10,9 @@
 #import "ZHPerson.h"
 #import "TotalAPI.h"
 #import "ZHTransfer.h"
+#import "ZHCircleImageView.h"
 @interface ZHTeamsTransferCell()
-@property (weak, nonatomic) IBOutlet UIImageView *playerView;
+@property (weak, nonatomic) IBOutlet ZHCircleImageView *playerView;
 @property (weak, nonatomic) IBOutlet UILabel *playerName;
 @property (weak, nonatomic) IBOutlet UILabel *transINFOL;
 @property (weak, nonatomic) IBOutlet UILabel *valueL;
@@ -32,8 +33,8 @@
 }
 -(void)awakeFromNib
 {
-    self.playerView.layer.cornerRadius = self.playerView.frame.size.width / 2;
-    self.playerView.layer.masksToBounds = YES;
+    self.playerView.cornerRadius = self.playerView.frame.size.width / 2;
+//    self.playerView.layer.masksToBounds = YES;
 }
 + (instancetype) cellWithTableView :(UITableView *)tableView
 {

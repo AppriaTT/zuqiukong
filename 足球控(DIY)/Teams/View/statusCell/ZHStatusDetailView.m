@@ -12,6 +12,7 @@
 #import "UIView+Extension.h"
 #import "UIImageView+WebCache.h"
 #import "NSString+Extension.h"
+#import "ZHCircleImageView.h"
 @implementation ZHStatusDetailView
 - (instancetype)init
 {
@@ -37,11 +38,11 @@
         [self addSubview:line];
         
         //头像图片
-        UIImageView *imgView = [[UIImageView alloc]init];
+        ZHCircleImageView *imgView = [[ZHCircleImageView alloc]init];
         [self addSubview:imgView];
 //        imgView.layer.cornerRadius =
-        imgView.layer.cornerRadius = 10;
-        imgView.layer.masksToBounds = YES;
+        imgView.cornerRadius = 10;
+//        imgView.layer.masksToBounds = YES;
         _iconView = imgView;
         
         //名字

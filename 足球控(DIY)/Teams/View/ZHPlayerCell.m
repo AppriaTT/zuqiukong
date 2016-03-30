@@ -10,6 +10,7 @@
 #import "ZHPerson.h"
 #import "TotalAPI.h"
 #import "ZHLStatics.h"
+
 @interface ZHPlayerCell ()
 @property (weak, nonatomic) IBOutlet UILabel *ageL;
 @property (weak, nonatomic) IBOutlet UILabel *nameL;
@@ -38,7 +39,8 @@
 }
 -(void)awakeFromNib
 {
-    self.iconView.layer.cornerRadius = self.iconView.frame.size.width / 2;
+    self.iconView.cornerRadius = self.iconView.frame.size.width / 2;
+    
 //    self.iconView.layer.masksToBounds = YES;
 }
 + (instancetype) cellWithTableView :(UITableView *)tableView

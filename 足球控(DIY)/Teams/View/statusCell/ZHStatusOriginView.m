@@ -11,6 +11,7 @@
 #import "UIView+Extension.h"
 #import "ZHStatus.h"
 #import "FXBlurView.h"
+#import "ZHCircleImageView.h"
 @implementation ZHStatusOriginView
 - (instancetype)init
 {
@@ -24,9 +25,9 @@
         [self addSubview:textLable];
         _textLable = textLable;
         //图片
-        UIImageView *picView = [[UIImageView alloc]init];
-        picView.layer.cornerRadius = 5;
-        picView.layer.masksToBounds = YES;
+        ZHCircleImageView *picView = [[ZHCircleImageView alloc]init];
+        picView.cornerRadius = 5;
+//        picView.layer.masksToBounds = YES;
         picView.contentMode = UIViewContentModeScaleAspectFill;
         picView.clipsToBounds = YES;
         [self addSubview:picView];

@@ -10,6 +10,7 @@
 #import "ZHPerson.h"
 #import "ZHLStatics.h"
 #import "TotalAPI.h"
+#import "ZHCircleImageView.h"
 @interface ZHPersonStatisView()
 
 
@@ -20,7 +21,7 @@
 
 @property (weak, nonatomic) IBOutlet UILabel *yellowL;
 @property (weak, nonatomic) IBOutlet UILabel *redL;
-@property (weak, nonatomic) IBOutlet UIImageView *iconView;
+@property (weak, nonatomic) IBOutlet ZHCircleImageView *iconView;
 @property (weak, nonatomic) IBOutlet UILabel *typeL;
 @property (weak, nonatomic) IBOutlet UIImageView *teamView;
 
@@ -34,8 +35,8 @@
 }
 -(void)awakeFromNib
 {
-    self.iconView.layer.cornerRadius = self.iconView.frame.size.width / 2;
-    self.iconView.layer.masksToBounds = YES;
+    self.iconView.cornerRadius = self.iconView.frame.size.width / 2;
+//    self.iconView.layer.masksToBounds = YES;
 }
 
 - (void)setPerson:(ZHPerson *)person
