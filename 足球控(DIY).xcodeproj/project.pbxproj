@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		98DE4CCE1CB3C1180038D35C /* index.png in Resources */ = {isa = PBXBuildFile; fileRef = 98DE4CCD1CB3C1180038D35C /* index.png */; };
 		98EF867F1CA135BE00BD4CB6 /* ZHCircleImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 98EF867E1CA135BE00BD4CB6 /* ZHCircleImageView.m */; };
 		BC0FB69A1C4BC95200C6F70B /* teamTheme in Resources */ = {isa = PBXBuildFile; fileRef = BC0FB6991C4BC95200C6F70B /* teamTheme */; };
 		BC0FB69D1C4BCC1700C6F70B /* ZHSkinTool.m in Sources */ = {isa = PBXBuildFile; fileRef = BC0FB69C1C4BCC1700C6F70B /* ZHSkinTool.m */; };
@@ -249,6 +250,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		98DE4CCD1CB3C1180038D35C /* index.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = index.png; sourceTree = "<group>"; };
 		98EF867D1CA135BE00BD4CB6 /* ZHCircleImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZHCircleImageView.h; sourceTree = "<group>"; };
 		98EF867E1CA135BE00BD4CB6 /* ZHCircleImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZHCircleImageView.m; sourceTree = "<group>"; };
 		BC0FB6991C4BC95200C6F70B /* teamTheme */ = {isa = PBXFileReference; lastKnownFileType = folder; path = teamTheme; sourceTree = "<group>"; };
@@ -828,6 +830,7 @@
 		BCA530121C33BDB1000A4E10 /* Temp */ = {
 			isa = PBXGroup;
 			children = (
+				98DE4CCD1CB3C1180038D35C /* index.png */,
 			);
 			name = Temp;
 			sourceTree = "<group>";
@@ -1718,6 +1721,7 @@
 				BCD88A4F1C44842A007212BA /* MBProgressHUD.bundle in Resources */,
 				BCD8886D1C4482AD007212BA /* ZHSectionHeaderView.xib in Resources */,
 				BCD8881A1C4481C7007212BA /* ZHLeftView.xib in Resources */,
+				98DE4CCE1CB3C1180038D35C /* index.png in Resources */,
 				BC0FB6A41C4BDB5C00C6F70B /* ZHThemeCell.xib in Resources */,
 				BCD888B01C448361007212BA /* ZHAboutViewController.xib in Resources */,
 				BCD8881D1C4481C7007212BA /* ZHTopView.xib in Resources */,
