@@ -109,6 +109,15 @@
 #define ZHNewsVideoURL @"http://dataserv.api.zuqiukong.com:8000/service/match/recommend_video/year/?last_id=0"
 
 #define ZHNewsURL @"http://newsserv2.api.zuqiukong.com:8000/server/get/all_message?last_id=0"
+#define ZHHotURL0 @"http://newsserv2.api.zqkong.com:8000/server/get/all_message_bycategory?last_id=0&type_id=0"
+#define ZHZHUANTI2 @"http://newsserv2.api.zqkong.com:8000/server/get/all_message_bycategory?last_id=0&type_id=2"
+#define ZHLOCAL3 @"http://newsserv2.api.zqkong.com:8000/server/get/all_message_bycategory?last_id=0&type_id=3"
+#define ZHYingChao5 @"http://newsserv2.api.zqkong.com:8000/server/get/all_message_bycategory?last_id=0&type_id=5"
+#define ZHXIJIA6 @"http://newsserv2.api.zqkong.com:8000/server/get/all_message_bycategory?last_id=0&type_id=6"
+#define ZHYIJIA7 @"http://newsserv2.api.zqkong.com:8000/server/get/all_message_bycategory?last_id=0&type_id=7"
+#define ZHDEJIA8 @"http://newsserv2.api.zqkong.com:8000/server/get/all_message_bycategory?last_id=0&type_id=8"
+#define ZHOUGUAN9 @"http://newsserv2.api.zqkong.com:8000/server/get/all_message_bycategory?last_id=0&type_id=9"
+#define ZHOther10 @"http://newsserv2.api.zqkong.com:8000/server/get/all_message_bycategory?last_id=0&type_id=10"
 
 #pragma mark //4.球探接口ZHScout
 #define ZHScoutHotPlayers @"http://dataserv.api.zuqiukong.com:5000/service/soccer/person/recommend/list"
