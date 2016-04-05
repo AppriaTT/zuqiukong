@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		98DE4CCE1CB3C1180038D35C /* index.png in Resources */ = {isa = PBXBuildFile; fileRef = 98DE4CCD1CB3C1180038D35C /* index.png */; };
+		98DE4CD11CB3C34F0038D35C /* teams.png in Resources */ = {isa = PBXBuildFile; fileRef = 98DE4CCF1CB3C34F0038D35C /* teams.png */; };
+		98DE4CD21CB3C34F0038D35C /* news.png in Resources */ = {isa = PBXBuildFile; fileRef = 98DE4CD01CB3C34F0038D35C /* news.png */; };
 		98EF867F1CA135BE00BD4CB6 /* ZHCircleImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 98EF867E1CA135BE00BD4CB6 /* ZHCircleImageView.m */; };
 		BC0FB69A1C4BC95200C6F70B /* teamTheme in Resources */ = {isa = PBXBuildFile; fileRef = BC0FB6991C4BC95200C6F70B /* teamTheme */; };
 		BC0FB69D1C4BCC1700C6F70B /* ZHSkinTool.m in Sources */ = {isa = PBXBuildFile; fileRef = BC0FB69C1C4BCC1700C6F70B /* ZHSkinTool.m */; };
@@ -251,6 +253,8 @@
 
 /* Begin PBXFileReference section */
 		98DE4CCD1CB3C1180038D35C /* index.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = index.png; sourceTree = "<group>"; };
+		98DE4CCF1CB3C34F0038D35C /* teams.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = teams.png; sourceTree = "<group>"; };
+		98DE4CD01CB3C34F0038D35C /* news.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = news.png; sourceTree = "<group>"; };
 		98EF867D1CA135BE00BD4CB6 /* ZHCircleImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZHCircleImageView.h; sourceTree = "<group>"; };
 		98EF867E1CA135BE00BD4CB6 /* ZHCircleImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZHCircleImageView.m; sourceTree = "<group>"; };
 		BC0FB6991C4BC95200C6F70B /* teamTheme */ = {isa = PBXFileReference; lastKnownFileType = folder; path = teamTheme; sourceTree = "<group>"; };
@@ -831,6 +835,8 @@
 			isa = PBXGroup;
 			children = (
 				98DE4CCD1CB3C1180038D35C /* index.png */,
+				98DE4CCF1CB3C34F0038D35C /* teams.png */,
+				98DE4CD01CB3C34F0038D35C /* news.png */,
 			);
 			name = Temp;
 			sourceTree = "<group>";
@@ -1724,6 +1730,7 @@
 				98DE4CCE1CB3C1180038D35C /* index.png in Resources */,
 				BC0FB6A41C4BDB5C00C6F70B /* ZHThemeCell.xib in Resources */,
 				BCD888B01C448361007212BA /* ZHAboutViewController.xib in Resources */,
+				98DE4CD21CB3C34F0038D35C /* news.png in Resources */,
 				BCD8881D1C4481C7007212BA /* ZHTopView.xib in Resources */,
 				BCD887611C448105007212BA /* Images.xcassets in Resources */,
 				BCBF676F1C454BA8002601D2 /* ZHTableResultCell.xib in Resources */,
@@ -1734,6 +1741,7 @@
 				BCD797E01C4D40B60055E83E /* UMSCommentDetailController.xib in Resources */,
 				BCE969E51C4B4803006A7122 /* ZHPersonStatisView.xib in Resources */,
 				BCD887621C448105007212BA /* test.jpg in Resources */,
+				98DE4CD11CB3C34F0038D35C /* teams.png in Resources */,
 				BCD888141C4481C7007212BA /* ZHStatusSecCell.xib in Resources */,
 				BC673D521C4A38E200164E4C /* ZHPlayerCell.xib in Resources */,
 				BCD797E51C4D40B60055E83E /* UMSLoginViewController.xib in Resources */,
