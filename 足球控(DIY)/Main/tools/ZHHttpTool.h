@@ -7,7 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "AFNetworking.h"
+#import <AFNetworking.h>
 @interface ZHHttpTool : NSObject
 //基于AFNetworking 3.0 的网络请求
 +(void)Get:(NSString *)urlString parameters:(NSDictionary *)params acceptableContentTypes:(NSString *)types success:(void(^)(id responseObject))success failure:(void(^)(NSError * error))failure;

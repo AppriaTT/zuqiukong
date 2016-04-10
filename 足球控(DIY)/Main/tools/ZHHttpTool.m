@@ -11,23 +11,23 @@
 @implementation ZHHttpTool
 +(void)Get:(NSString *)urlString parameters:(NSDictionary *)params acceptableContentTypes:(NSString *)types success:(void(^)(id responseObject))success failure:(void(^)(NSError * error))failure
 {
-    AFHTTPRequestOperationManager *mgr = [AFHTTPRequestOperationManager manager];
-    mgr.responseSerializer.acceptableContentTypes = [NSSet setWithObjects:types, nil];
-    [mgr GET:urlString parameters:params success:^(AFHTTPRequestOperation *operation, id responseObject) {
-        
-        success (responseObject);
-    } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
-        failure (error);
-        
-    }];
-    
-//    AFHTTPSessionManager *session = [AFHTTPSessionManager manager];
-//    session.responseSerializer.acceptableContentTypes = [NSSet setWithObjects:types, nil];
-//    [session GET:urlString parameters:params success:^(NSURLSessionDataTask *task, id responseObject) {
-//        success(responseObject);
-//    } failure:^(NSURLSessionDataTask *task, NSError *error) {
-//        failure(error);
+//    AFHTTPRequestOperationManager *mgr = [AFHTTPRequestOperationManager manager];
+//    mgr.responseSerializer.acceptableContentTypes = [NSSet setWithObjects:types, nil];
+//    [mgr GET:urlString parameters:params success:^(AFHTTPRequestOperation *operation, id responseObject) {
+//        
+//        success (responseObject);
+//    } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+//        failure (error);
+//        
 //    }];
+    
+    AFHTTPSessionManager *session = [AFHTTPSessionManager manager];
+    session.responseSerializer.acceptableContentTypes = [NSSet setWithObjects:types, nil];
+    [session GET:urlString parameters:params success:^(NSURLSessionDataTask *task, id responseObject) {
+        success(responseObject);
+    } failure:^(NSURLSessionDataTask *task, NSError *error) {
+        failure(error);
+    }];
 }
 
 +(void)Post:(NSString *)urlString parameters:(NSDictionary *)params acceptableContentTypes:(NSString *)types success:(void(^)(id responseObject))success failure:(void(^)(NSError * error))failure
