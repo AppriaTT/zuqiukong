@@ -1318,7 +1318,7 @@
 				TargetAttributes = {
 					BC25491C1C329F2400BF3892 = {
 						CreatedOnToolsVersion = 6.3;
-						DevelopmentTeam = W272WDFC9W;
+						DevelopmentTeam = C55288W2EF;
 					};
 					BC2549351C329F2400BF3892 = {
 						CreatedOnToolsVersion = 6.3;
