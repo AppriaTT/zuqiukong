@@ -11,11 +11,14 @@
 #import "ZHNews.h"
 #import "UIView+Extension.h"
 #import "MBProgressHUD+MJ.h"
-@interface ZHNewsDetailReadController ()<UIWebViewDelegate>
+@interface ZHNewsDetailReadController ()<UIWebViewDelegate,UIScrollViewDelegate>
 @property (nonatomic,weak)UIWebView *webView;
 @end
 
 @implementation ZHNewsDetailReadController
+{
+    NSInteger _lastContentOffSetY;
+}
 - (void)viewWillAppear:(BOOL)animated
 {
     [super viewWillAppear:YES];
@@ -61,6 +64,7 @@
     [self.view addSubview:webView];
     webView.backgroundColor = [UIColor whiteColor];
 //    NSURLRequest *request = [NSURLRequest requestWithURL:];
+    self.webView.scrollView.delegate = self;
 }
 //传递数据进来时
 -(void)setNews:(ZHNews *)news
@@ -86,7 +90,7 @@
 #pragma mark UIWebViewDelegate
 - (void)webViewDidStartLoad:(UIWebView *)webView
 {
-    [MBProgressHUD showMessage:@"正在玩命加载新闻噢亲~!"];
+//    [MBProgressHUD showMessage:@"正在玩命加载新闻噢亲~!"];
     dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(3.0 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
         
         [MBProgressHUD hideHUD];
@@ -107,4 +111,17 @@
     [MBProgressHUD hideHUD];
     [self.webView removeFromSuperview];
 }
+
+- (void)scrollViewDidScroll:(UIScrollView*)scrollView{
+    //_lastcontentoffset上一次滑动的距离
+    if(scrollView.contentOffset.y>0) {
+        [self.navigationController setNavigationBarHidden:YES animated:YES];
+        
+        if(scrollView.contentOffset.y-_lastContentOffSetY<=0) {
+                    [self.navigationController setNavigationBarHidden:NO animated:YES];
+                }
+    }
+    _lastContentOffSetY=scrollView.contentOffset.y;
+}
+
 @end
