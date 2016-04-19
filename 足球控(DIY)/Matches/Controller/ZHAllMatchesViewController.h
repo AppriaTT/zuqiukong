@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @interface ZHAllMatchesViewController : UIViewController
+@property (nonatomic, weak)UITableView *tableView;
 /**
  *  点击cell告诉母控制器要pushpageView了
  */

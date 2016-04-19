@@ -10,7 +10,7 @@
 #import "ZHMatchesPageViewController.h"
 #import "ZHAllLeagueController.h"
 #import "ZHSkinTool.h"
-@interface ZHMatchesViewController ()
+@interface ZHMatchesViewController ()<UITableViewDelegate>
 
 @property(nonatomic,weak)UITableView *tableView;
 @property (nonatomic,strong) NSArray *dataSourceArray;
@@ -22,6 +22,7 @@
 @implementation ZHMatchesViewController
 {
     UISegmentedControl *_segC;
+    NSInteger _lastContentOffSetY;
 }
 - (void)viewWillAppear:(BOOL)animated
 {
@@ -70,6 +71,7 @@
     if (!_hotVController) {
         ZHHotMatchViewController *hotVC = [[ZHHotMatchViewController alloc]init];
         _hotVController = hotVC;
+        _hotVController.tableView.delegate = self;
     }
     return _hotVController;
 }
@@ -79,7 +81,7 @@
    
         ZHAllMatchesViewController *allVC = [[ZHAllMatchesViewController alloc]init];
         _allVController = allVC;
-        
+        _allVController.tableView.delegate = self;
         //点击allMatch 的cell后回调的代码
         [allVC setCellClickHandler:^(id respondObjc, NSIndexPath *indexPath) {
             if (indexPath.section) {
@@ -122,6 +124,20 @@
 {
     NSLog(@"rightBarButtonItemRefreshClick");
 }
+#pragma mark UIScrollViewDelegate
+//上拉隐藏导航栏, 下拉显示
+- (void)scrollViewDidScroll:(UIScrollView*)scrollView{
+    //_lastcontentoffset上一次滑动的距离
+    if(scrollView.contentOffset.y>0) {
+        [self.navigationController setNavigationBarHidden:YES animated:YES];
+        
+        if(scrollView.contentOffset.y-_lastContentOffSetY<=0) {
+            [self.navigationController setNavigationBarHidden:NO animated:YES];
+        }
+    }
+    _lastContentOffSetY=scrollView.contentOffset.y;
+}
+
 #pragma mark dealloc
 - (void)dealloc
 {

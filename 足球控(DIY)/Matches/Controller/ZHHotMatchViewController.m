@@ -19,6 +19,9 @@
 @interface ZHHotMatchViewController ()<UITableViewDataSource,UITableViewDelegate>
 @end
 @implementation ZHHotMatchViewController
+{
+     NSInteger _lastContentOffSetY;
+}
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self setupTableView];
@@ -188,4 +191,5 @@
     header.titleLable.text = vs.date_utc;
     return header;
 }
+
 @end

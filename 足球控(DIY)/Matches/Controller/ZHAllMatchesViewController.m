@@ -12,11 +12,14 @@
 #import "TotalAPI.h"
 
 @interface ZHAllMatchesViewController ()<UITableViewDataSource,UITableViewDelegate>
-@property (nonatomic, weak)UITableView *tableView;
+
 @property (nonatomic, strong) NSArray *dataSourceArray;
 @end
 
 @implementation ZHAllMatchesViewController
+{
+     NSInteger _lastContentOffSetY;
+}
 //- (void)viewWillDisappear:(BOOL)animated
 //{
 //    [super viewWillDisappear:YES];
@@ -124,5 +127,4 @@
     }
     return 40;
 }
-
 @end
