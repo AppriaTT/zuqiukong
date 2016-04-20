@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		9340E33D1CBA4C420028DE64 /* MBProgressHUD+MJ.m in Sources */ = {isa = PBXBuildFile; fileRef = 9340E33C1CBA4C420028DE64 /* MBProgressHUD+MJ.m */; };
+		9816B13D1CC790450090DA86 /* ZHNGMainTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 9816B13C1CC790450090DA86 /* ZHNGMainTool.m */; };
 		98DE4CCE1CB3C1180038D35C /* index.png in Resources */ = {isa = PBXBuildFile; fileRef = 98DE4CCD1CB3C1180038D35C /* index.png */; };
 		98DE4CD11CB3C34F0038D35C /* teams.png in Resources */ = {isa = PBXBuildFile; fileRef = 98DE4CCF1CB3C34F0038D35C /* teams.png */; };
 		98DE4CD21CB3C34F0038D35C /* news.png in Resources */ = {isa = PBXBuildFile; fileRef = 98DE4CD01CB3C34F0038D35C /* news.png */; };
@@ -200,6 +201,8 @@
 		6F3334C8C966632B6B4F9868 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		9340E33B1CBA4C420028DE64 /* MBProgressHUD+MJ.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MBProgressHUD+MJ.h"; sourceTree = "<group>"; };
 		9340E33C1CBA4C420028DE64 /* MBProgressHUD+MJ.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MBProgressHUD+MJ.m"; sourceTree = "<group>"; };
+		9816B13B1CC790450090DA86 /* ZHNGMainTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZHNGMainTool.h; sourceTree = "<group>"; };
+		9816B13C1CC790450090DA86 /* ZHNGMainTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZHNGMainTool.m; sourceTree = "<group>"; };
 		98DE4CCD1CB3C1180038D35C /* index.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = index.png; sourceTree = "<group>"; };
 		98DE4CCF1CB3C34F0038D35C /* teams.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = teams.png; sourceTree = "<group>"; };
 		98DE4CD01CB3C34F0038D35C /* news.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = news.png; sourceTree = "<group>"; };
@@ -1203,6 +1206,8 @@
 				BCD889A71C448429007212BA /* ZHTools.m */,
 				BC0FB69B1C4BCC1700C6F70B /* ZHSkinTool.h */,
 				BC0FB69C1C4BCC1700C6F70B /* ZHSkinTool.m */,
+				9816B13B1CC790450090DA86 /* ZHNGMainTool.h */,
+				9816B13C1CC790450090DA86 /* ZHNGMainTool.m */,
 			);
 			path = tools;
 			sourceTree = "<group>";
@@ -1538,6 +1543,7 @@
 				BC2780311C469A090060E540 /* ZHAllLeagueController.m in Sources */,
 				BC8FB2241C49183F001C4FD9 /* ZHSeasonResult.m in Sources */,
 				BCD888031C4481C7007212BA /* ZHSeaResultController.m in Sources */,
+				9816B13D1CC790450090DA86 /* ZHNGMainTool.m in Sources */,
 				BCD888381C44821D007212BA /* ZHMatchesVSCell.m in Sources */,
 				BC673D511C4A38E200164E4C /* ZHPlayerCell.m in Sources */,
 				BCE969E81C4B53A0006A7122 /* ZHPlayerDetailController.m in Sources */,

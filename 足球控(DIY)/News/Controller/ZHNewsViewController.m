@@ -24,6 +24,8 @@
     UISearchBar *_searchBar;
     UISearchController *_seaController;
     ZHShowNewsTableView *_tableView;
+    NSInteger _lastContentOffSetY;
+    
 }
 - (void)viewDidLoad {
     [super viewDidLoad];

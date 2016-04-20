@@ -9,7 +9,7 @@
 #import "UIImage+ZH.h"
 #import "ZHNGViewController.h"
 #import "ZHSkinTool.h"
-
+#import "ZHNGMainTool.h"
 #define imgArray0 @[@"tabbar_ic_teams_default",@"tabbar_ic_competition_default",@"tabbar_ic_news_default",@"tabbar_ic_scuot_default",@"tabbar_ic_option_default"]
 
 #define imgSelectedArray0  @[@"tabbar_ic_teams_selected",@"tabbar_ic_competition_selected",@"tabbar_ic_news_selected",@"tabbar_ic_scout_selected",@"tabbar_ic_option_selected"]
@@ -25,6 +25,9 @@
     [super viewDidLoad];
     [self setupTabBarItems];
     [[NSNotificationCenter defaultCenter]addObserver:self selector:@selector(changeTheme) name:@"theme" object:nil];
+    
+    [ZHNGMainTool sharedVCTool].mainTabVC = self;
+    
 }
 
 //设置换肤
