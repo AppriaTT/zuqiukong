@@ -20,11 +20,6 @@
 {
      NSInteger _lastContentOffSetY;
 }
-//- (void)viewWillDisappear:(BOOL)animated
-//{
-//    [super viewWillDisappear:YES];
-//    [self.navigationController setNavigationBarHidden:YES animated:YES];
-//}
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self setupTableView];
