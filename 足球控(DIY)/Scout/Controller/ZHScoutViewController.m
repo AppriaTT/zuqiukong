@@ -24,7 +24,7 @@
     UISearchController *_seaController;
     UICollectionView *_galleryCollectionView;
     NSMutableArray *_dataArray;
-
+    NSInteger _lastContentOffSetY;
 }
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -203,5 +203,21 @@
         }
     }
     return YES;
+}
+
+#pragma mark UIScrollViewDelegate
+//上拉隐藏导航栏, 下拉显示
+- (void)scrollViewDidScroll:(UIScrollView*)scrollView{
+    //_lastcontentoffset上一次滑动的距离
+    if(scrollView.contentOffset.y>0) {
+        
+        [self.navigationController setNavigationBarHidden:YES animated:YES];
+        self.extendedLayoutIncludesOpaqueBars = YES;
+        if(scrollView.contentOffset.y-_lastContentOffSetY<=0) {
+            [self.navigationController setNavigationBarHidden:NO animated:YES];
+        }
+    }
+    _lastContentOffSetY=scrollView.contentOffset.y;
+    
 }
 @end
