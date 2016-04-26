@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		9340E33D1CBA4C420028DE64 /* MBProgressHUD+MJ.m in Sources */ = {isa = PBXBuildFile; fileRef = 9340E33C1CBA4C420028DE64 /* MBProgressHUD+MJ.m */; };
 		9816B13D1CC790450090DA86 /* ZHNGMainTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 9816B13C1CC790450090DA86 /* ZHNGMainTool.m */; };
+		987141811CCF445D0023E78A /* UIView+ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 987141801CCF445D0023E78A /* UIView+ViewController.m */; };
 		98DE4CCE1CB3C1180038D35C /* index.png in Resources */ = {isa = PBXBuildFile; fileRef = 98DE4CCD1CB3C1180038D35C /* index.png */; };
 		98DE4CD11CB3C34F0038D35C /* teams.png in Resources */ = {isa = PBXBuildFile; fileRef = 98DE4CCF1CB3C34F0038D35C /* teams.png */; };
 		98DE4CD21CB3C34F0038D35C /* news.png in Resources */ = {isa = PBXBuildFile; fileRef = 98DE4CD01CB3C34F0038D35C /* news.png */; };
@@ -203,6 +204,8 @@
 		9340E33C1CBA4C420028DE64 /* MBProgressHUD+MJ.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MBProgressHUD+MJ.m"; sourceTree = "<group>"; };
 		9816B13B1CC790450090DA86 /* ZHNGMainTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZHNGMainTool.h; sourceTree = "<group>"; };
 		9816B13C1CC790450090DA86 /* ZHNGMainTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZHNGMainTool.m; sourceTree = "<group>"; };
+		9871417F1CCF445D0023E78A /* UIView+ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+ViewController.h"; sourceTree = "<group>"; };
+		987141801CCF445D0023E78A /* UIView+ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+ViewController.m"; sourceTree = "<group>"; };
 		98DE4CCD1CB3C1180038D35C /* index.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = index.png; sourceTree = "<group>"; };
 		98DE4CCF1CB3C34F0038D35C /* teams.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = teams.png; sourceTree = "<group>"; };
 		98DE4CD01CB3C34F0038D35C /* news.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = news.png; sourceTree = "<group>"; };
@@ -1224,6 +1227,8 @@
 		BCD889A91C448429007212BA /* Category */ = {
 			isa = PBXGroup;
 			children = (
+				9871417F1CCF445D0023E78A /* UIView+ViewController.h */,
+				987141801CCF445D0023E78A /* UIView+ViewController.m */,
 				BCD889AA1C448429007212BA /* NSString+Extension.h */,
 				BCD889AB1C448429007212BA /* NSString+Extension.m */,
 				BCD889AC1C448429007212BA /* UIBarButtonItem+Extension.h */,
@@ -1550,6 +1555,7 @@
 				BCBF67631C450E35002601D2 /* ZHTransferViewController.m in Sources */,
 				BCD888B41C448361007212BA /* ZHOptionViewController.m in Sources */,
 				BC1F09FB1C4A040A006BA3DD /* ZHGuess.m in Sources */,
+				987141811CCF445D0023E78A /* UIView+ViewController.m in Sources */,
 				BCBF67661C450E4C002601D2 /* ZHChampionController.m in Sources */,
 				BCD888AD1C448361007212BA /* ZHBaseSettingViewController.m in Sources */,
 				BC1F09F71C4A03C4006BA3DD /* ZHParkGuessCell.m in Sources */,

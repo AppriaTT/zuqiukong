@@ -13,11 +13,14 @@
 #import "ZHSmallVideoCell.h"
 #import "ZHRefreshGifHeader.h"
 #import "ZHRefreshGifFooter.h"
-
+#import "UIView+ViewController.h"
 @interface ZHShowNewsTableView ()<UITableViewDataSource,UITableViewDelegate>
 
 @end
 @implementation ZHShowNewsTableView
+{
+    NSInteger _lastContentOffSetY;
+}
 - (void)setNewsArray:(NSArray *)newsArray
 {
     _newsArray = newsArray;
@@ -174,5 +177,22 @@
     {
         self.cellClickHandler(self.smallVideoArray,indexPath);
     }
+}
+#pragma mark UIScrollViewDelegate
+//上拉隐藏导航栏, 下拉显示
+- (void)scrollViewDidScroll:(UIScrollView*)scrollView{
+    //_lastcontentoffset上一次滑动的距离
+    if (scrollView == self){
+    if(scrollView.contentOffset.y>0) {
+        
+        [self.viewController.navigationController setNavigationBarHidden:YES animated:YES];
+        self.viewController.extendedLayoutIncludesOpaqueBars = YES;
+        if(scrollView.contentOffset.y-_lastContentOffSetY<=0) {
+            [self.viewController.navigationController setNavigationBarHidden:NO animated:YES];
+        }
+    }
+        _lastContentOffSetY=scrollView.contentOffset.y;
+    }
+    
 }
 @end

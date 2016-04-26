@@ -34,7 +34,7 @@
     UITableView *tv = [[UITableView alloc]initWithFrame:self.view.bounds];
     [self.view addSubview:tv];
     self.tableView = tv;
-    self.tableView.height = self.tableView.height - 44 - 20 - 49;
+    self.tableView.height = self.tableView.height - 49;
     self.tableView.backgroundColor = [UIColor whiteColor];
     self.tableView.delegate = self;
     self.tableView.dataSource = self;
